@@ -1,0 +1,140 @@
+img.bg {
+    background: linear-gradient(45deg, #94B3FF, #97e4ee);
+    min-height: 100%;
+    min-width: 1024px;
+  
+
+    width: 100%;
+    height: auto;
+  
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  @media screen and (max-width: 1024px){
+    img.bg {
+      left: 50%;
+      margin-left: -512px;
+    }
+  }
+
+.bgc{
+    background: rgb(255, 255, 255);
+    border-radius: 1%;
+    width: 550px;
+    height: 53rem;
+    /*border-color: rgb(5, 5, 5);*/
+    /*border-style: double;*/
+}
+
+.moldura{
+  padding: 15px;
+}
+
+.margem{
+  margin: none;
+  padding: 1px;
+}
+
+.borda{
+ border-radius: 1%;
+}
+
+.fs-18{
+  font-size: 18pt;
+  padding: 7px;
+}
+
+.fs-19{
+  font-family: "Poppins", sans-serif;
+  font-size: 20pt;
+  padding: 7px;
+}
+
+.fs-16{
+  font-family: "Poppins", sans-serif;
+  font-size: 18pt;
+  padding: 7px;
+}
+
+.fs-15{
+    font-size: 15pt;
+}
+
+.fs-8{
+  font-size: 8pt;
+}
+
+.imglogo{
+    width: 50px;
+    height: 50px;
+    background-color: #253C76;
+    border-radius: 50%;
+
+}
+
+.button{
+
+  width: 95%;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.form-control:focus{ 
+  border-color: white; 
+  box-shadow: 0 0 0 0; 
+  box-shadow: none; 
+  border: none;
+}
+
+.input-field{
+
+  position: relative;
+}
+
+.input-field{
+
+  position: relative;
+  margin: 1px;
+
+}
+
+.input-field .underline::before {
+content:"";
+position: absolute;
+height: 0.9px;
+width: 100%;
+bottom: -5px;
+left: 0;
+background: rgb(240, 240, 240);
+
+}
+.input-field .underline::after {
+  content:"";
+  position: absolute;
+  height: 0.9px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(45deg, #5383fd, #bbf6fd);
+  transform: scaleX(0);
+  transition: all .3s ease-in-out;
+  transform-origin: left;
+} 
+
+.input-field input:focus ~ .underline::after{
+  transform: scaleX(1)
+}
+.footer{
+
+display: flex;
+flex-direction: column;
+margin-top: 1rem;
+}
+
+input {border:0;outline:0;}
+input:focus {outline:none!important;}
+
+

@@ -1,0 +1,48 @@
+<div class="bg-pag">
+    <div class="container">
+        <div class="row d-flex justify-content-center" *ngFor='let item of listaGrupos'>
+            <div class="col-md-8">
+                <div class="card my-2">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <a [routerLink]="['/grupos', item.idGrupo]">
+                                        <img class="rounded-circle img-grp" src="{{item.urlImagemGrupo}}"
+                                            alt="Imagem do Grupo">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <a [routerLink]="['/grupos', item.idGrupo]">
+                                    <h5 class="m-0">
+                                        {{item.temaGrupo}}
+                                    </h5>
+                                </a>
+
+
+                                <h6 class="m-0">
+                                    {{item.categoriaGrupo}}
+                                </h6>
+
+                                <small class="m-0">
+                                    {{item.descricaoGrupo}}
+                                </small>
+                            </div>
+
+                            <div class="col-3 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <button class="btn btn-outline-primary rounded-circle" type="submit" (click)='entrar(item.idGrupo)'>
+                                        <i class="fa fa-user-plus " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

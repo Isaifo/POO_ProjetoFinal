@@ -1,0 +1,63 @@
+<div class="container-fluid bg-principal h-minimo">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-8">
+            <div class="row d-flex align-items-center h-minimo">
+                <div class="col-md-5">
+                    <div class="container">
+                        <h1 class="fs-19">Salutem</h1>
+                        <p class="font-italic fs-16">
+                            Sua fonte confiável sobre saúde na internet.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-7 col-lg-6 col-xl-5 d-flex">
+                    <div class="bg-light p-5 ml-5 ml-3 rounded container">
+                        <h1 class="text-center fs-16">Entrar</h1>
+        
+                        <div class="input-field form-group fs-17 caixas">
+                            <label for="usuario"></label>
+                            <input [(ngModel)]='usuarioLogin.emailUsuario' class="form-control" type="text" name="usuario" id="usuario"
+                                placeholder="Informe seu usuário">
+                                <div class="underline"></div>
+                        </div>
+        
+                        <div class="input-field form-group fs-17 caixas">
+                            <label for="senha"></label>
+                            <input [(ngModel)]='usuarioLogin.senhaUsuario' class="form-control" type="password" name="senha" id="senha" placeholder="Informe sua senha">
+                            <div class="underline"></div>
+                        </div>
+        
+                        <div class="d-flex justify-content-center fs-17">
+                            <button class="btn btn-info button" (click)='entrar()'>Entrar</button>
+                        </div>
+        
+                        <hr class="p-2">
+                        <p class="text-center fs-18">
+                            É novo por aqui? <a routerLink="/cadastrar">Cadastre-se</a>
+                            <div class= "footer">
+
+                              <span> Ou conecte com a Redes Sociais </span> 
+                              <div class="social-fields">
+                                <div class="social-field twitter">
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                        Entre com o Twitter
+                                    </a>
+
+                                </div>
+                            
+                                    <div class="social-field facebook">
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                            Entre com o Facebook
+                                        </a>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

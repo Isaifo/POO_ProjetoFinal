@@ -1,0 +1,102 @@
+<div class="">
+  <div class="navbar navbar-expand navbar-light bg" (window:resize)="onResize($event)">
+
+    <div *ngIf='exibe' class="alinhar">
+      <a class="navbar-brand mr-2" routerLink='/inicio'>
+        <img src="https://i.imgur.com/FguOnQN.png" class="d-inline-block align-top img-fluid rounded-circle imglogo"
+          alt="" loading="lazy">
+      </a>
+
+      <h6 class="mr-2 fs-16">Salutem</h6>
+    </div>
+
+    <div class="input-group margem-pesquisa" [style.width.%]="width" (click)='exibirBuscaCompleta()'>
+      <div class="input-group-prepend">
+        <button class="btn btn-dark borda" type="button" (click)='pesquisarTema()'>
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <input [(ngModel)]='pesquisaTema' type="text" class="form-control borda" placeholder="Procurar"
+        aria-label="pesquisatema" aria-describedby="basic-addon1" *ngIf='exibeBarra'>
+    </div>
+
+    <div *ngIf='exibe' class="ml-auto mr-2">
+      <div class="row margem-icones">
+
+        <div class="col text-center px-2" routerLink='/sobre'>
+          <a class="fa fa-info-circle text-dark fs-icones"> </a>
+          <h6>Sobre</h6>
+        </div>
+
+        <div class="col text-center px-2">
+          <a class="fa fa-users text-dark fs-icones" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false"> </a>
+          <h6>Grupos</h6>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a *ngIf='verificarCrm()' href="#" class="dropdown-item" data-toggle="modal" data-target="#ExemploModalCentralizado">Novo
+              Grupo</a>
+          </div>
+        </div>
+
+        <div class="col text-center px-2" [routerLink]="['/user', idUser]">
+          <a>
+            <img class="img-usuario rounded-circle" (error)='fotoperfil($event)' src="{{this.perfil}}" alt="Imagem do usuário">
+          </a>
+          <h6>Eu</h6>
+        </div>
+
+        <div class="col text-center px-2" (click)="sair()">
+          <a class="fa fa-sign-out text-dark fs-icones"> </a>
+          <h6>Sair</h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+  aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Criar novo grupo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cancelar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input [(ngModel)]="grupo.temaGrupo" type="text" class="form-control" id="nome"
+            placeholder="Digite o nome do grupo">
+        </div>
+
+        <div class="form-group">
+          <label for="especialidade">Especialidade</label>
+          <input [(ngModel)]="grupo.categoriaGrupo" type="text" class="form-control" id="especialidade"
+            placeholder="Digite sua especialidade">
+        </div>
+
+        <div class="form-group">
+          <label for="imagem">Imagem</label>
+          <input [(ngModel)]="grupo.urlImagemGrupo" type="text" class="form-control" id="imagem"
+            placeholder="Digite a URL da imagem">
+        </div>
+
+        <div class="form-group">
+          <label for="descricao">Descrição</label>
+          <textarea name="descricao" [(ngModel)]="grupo.descricaoGrupo" class="form-control" id="descricao" cols="30"
+            rows="5"></textarea>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal ">Cancelar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="criarNovoGrupo()">Criar</button>
+      </div>
+    </div>
+  </div>
+</div>

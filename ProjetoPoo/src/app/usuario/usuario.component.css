@@ -1,0 +1,140 @@
+
+.text-center my-3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.img-perfil{
+    width: 150pt;
+    height: 150pt;
+    object-fit: cover;
+    border-style: groove;
+    border-color: black;
+}
+
+
+.img-capa2{
+    width: 1101pt;
+    height: 327pt;
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.img-capa{
+    width: 100%;
+    height: 260px;
+    
+}
+
+.bg-card{
+    background: rgb(245,245,245);
+    background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 38%, rgba(148,179,255,1) 100%);
+}
+
+.container-img{
+    position: relative;
+   
+}
+
+.t-card{
+    width: 1100pt;
+    height: 370pt;
+}
+
+.grupo-img{
+    width: 205px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
+.slide-grupo{
+    width: 230px;
+    height: 270px;
+}
+
+
+.container-img img{
+    display: block;
+    margin: 0 auto;
+}
+
+.card-body{
+    background-color: #fff;
+   /* box-shadow: 5px 5px 5px rgb(12, 77, 97); */
+}
+.container-img .fa-cog{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.categoriaAnimacao:hover { 
+    transition:0.2s;
+    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(0.98); 
+}
+
+.categoriaAnimacao:not(:hover) {
+    transition: 0.2s;
+}
+
+.bord-card{
+    border-radius: 20px;
+}
+
+.bord-card2{
+    width: 240px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.fs-10{
+    font-size: 10pt;
+}
+
+.fs-12{
+    font-size: 12pt;
+}
+
+.fs-14{
+    font-size: 14pt;
+}
+
+.fs-16{
+    font-size: 16pt;
+}
+
+.fs-18{
+    font-size: 18pt;
+}
+
+.fs-20{
+    font-size: 20pt;
+}
+
+
+.fs-26{
+    font-size: 26pt;
+}
+
+.fs-40{
+    font-size: 40pt;
+}
+
+.fa-cog{
+    color: rgb(68, 67, 67);
+}
+
+.icon-hover:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.bg{
+    background-color: #f8f8ff;
+}
