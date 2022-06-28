@@ -3,11 +3,6 @@
   
 ## Integrantes
 
- + 👀 [Giullia Maria Ramos da Silva](https://github.com/jujups "GitHub")
-+ 😎 [Gustavo de Oliveira Thomaz](https://github.com/GustavoThomaz "GitHub")
-+ 🐱[Isadora Fernandes Oliveira](https://github.com/Isaifo "GitHub")
-+ 🤔[Tiago Pereira Higa Martins](https://github.com/tiagoHiga "GitHub")
-+ 😜[Vinicius Rocha dos Santos](https://github.com/Rocha-Vinicius "GitHub")
 
 
 ## Salutem
