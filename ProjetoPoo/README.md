@@ -1,7 +1,5 @@
 <h1 align=center> Projeto Integrador Salutem </h1>
   
-  
-## Integrantes
 
 
 
